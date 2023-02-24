@@ -30,7 +30,8 @@ import { HightLightDirective } from './directives/highlight.directive';
     ShortenPipe,
     UsernamePipe,
     TimeAgoPipe,
-    HightLightDirective
+    HightLightDirective,
+    
   ]
 })
 export class SharedModule { }
