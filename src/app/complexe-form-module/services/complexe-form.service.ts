@@ -6,7 +6,7 @@ import { ComplexFormValue } from "../models/complexe-form-value.model";
 
 
 @Injectable()
-export class ComplexeFormComponent {
+export class ComplexeFormService {
   constructor( private http: HttpClient) {}
 
   saveUserInfo(formValue: ComplexFormValue): Observable<boolean> {
