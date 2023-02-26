@@ -107,11 +107,12 @@ export class ComplexeFormComponent {
       this.confirmEmailCtrl.value
       )
     )
-    
+
     this.showPasswordError$ = this.loginInfoForm.statusChanges.pipe(
       map(status => status === 'INVALID' &&
-                    this.passwordCtrl.value &&
-                    this.confirmPasswordCtrl.value
+        this.passwordCtrl.value &&
+        this.confirmPasswordCtrl.value &&
+        this.loginInfoForm.hasError('confirmEqual')
       )
     );
   }
